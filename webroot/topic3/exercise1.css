@@ -1,0 +1,32 @@
+div{
+    background-color: silver;
+}
+strong{
+    font-size: 24pt;
+}
+p{
+    background-color: green;
+    font-size: 24pt;
+}
+ul{
+    background-color: green;
+    font-size: 24pt;
+}
+*{
+    background-color: burlywood;
+}
+a:link{
+    color:blue;
+}
+a:visited{
+    color:green;
+}
+a:hover{
+    color:hotpink;
+}
+a:active{
+    color:blue;
+}
+ul a{
+    background-color: orange;
+}

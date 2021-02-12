@@ -1,0 +1,33 @@
+@import "exercise2_s2.css";
+div{
+    background-color: gold;
+}
+strong{
+    font-size: 24pt;
+}
+p{
+    background-color: red;
+    font-size: 24pt;
+}
+ul{
+    background-color: red;
+    font-size: 24pt;
+}
+*{
+    background-color: lightyellow;
+}
+a:link{
+    color: green;
+}
+a:visited{
+    color: blue;
+}
+a:hover{
+    color: yellow;
+}
+a:active{
+    color: red;
+}
+ul a{
+    background-color: brown;
+}
