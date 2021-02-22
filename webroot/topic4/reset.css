@@ -1,0 +1,7 @@
+html,body,table,caption,thead,tr,th,td,tfoot,h1,h2,p,div,p,form,option,fieldset,section,label,input,datalist,select,legend{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}

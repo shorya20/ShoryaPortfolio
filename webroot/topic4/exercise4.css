@@ -1,0 +1,63 @@
+form{
+    margin-left: 25%;
+}
+fieldset{
+    background-color:rgb(174, 238, 144);
+    border: 1pt solid black;
+    width: 39em;
+    margin-right: 2em;
+    margin-left: 1em;
+    padding-left: 1em;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+select,input{
+    background-color: white;
+    border: 1px solid grey;
+    font-size: small;
+    margin-bottom: 0.5em;
+}
+p,footer{
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    font-family: sans-serif;
+    margin-bottom: 0.3em;
+}
+legend{
+    margin-left: 1em;
+    height: 1.3em;
+    text-align: center;
+    background-color:green;
+    border: 1pt solid black;
+    width: 40em;
+    font-family: sans-serif;
+    font-size: medium;
+    color: white;
+    font-weight: bold;
+}
+label{
+    font-family: sans-serif;
+    font-size: medium;
+}
+.submit{
+    margin-top: 1.5em;
+    margin-left: 12em;
+    font-size: medium;
+    padding:0.2em;
+    background-color: green;
+    color: white;
+    border-radius: 10%;
+}
+.reset{
+    border-radius: 10%;
+    padding:0.2em;
+    margin-left: 0.5em;
+    font-size: medium;
+    color: white;
+    background-color: green;
+}
+.last{
+    height: 5.5em;
+    background-color: white;
+    border: 0pt solid;
+}

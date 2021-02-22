@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="exercise4.css">
+        <title>Exercise 4</title>
+        <body>
+            <form method="GET" action="http://webprojects.eecs.qmul.ac.uk/un300/week4/week4_process.php">
+                <fieldset>
+                    <legend>Shirt Order Form</legend>
+                    <section>
+                            <fieldset>
+                                <p>
+                                <label for="shirt_size">Shirt Size</label><br>
+                                <select name="shirt_size">
+                                    <optgroup>
+                                        <option>Choose size</option>
+                                        <option value="XS">XS</option>
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                    </optgroup>
+                                </select>
+                                </p>
+                                <p>
+                                    <label for="sleeves:">Sleeves</label><br>
+                                    <input type="radio" name="sleeves" value="short" checked>Short <br>
+                                    <input type="radio" name="sleeves" value="long">Long <br>
+                                </p>
+                                <p>
+                                    <label for="color:">Choose Shirt color</label><br>
+                                    <input type="color" name="color">
+                                </p>
+                                <p>
+                                    <label for="quantity:">Quantity</label><br>
+                                    <input type="number" min=1 max="10" name="quantity">
+                                </p>
+                                <p>
+                                    <label for="date">Date Requested</label><br>
+                                    <input type="date" name="date">
+                                </p>
+                            </fieldset> 
+                            <fieldset>
+                                <p>
+                                    <label for="name">Name</label><br>
+                                    <input type="text" name="name">
+                                </p>
+                                <p>
+                                    <label for="email">Email Address</label><br>
+                                    <input type="text" name="email">
+                                </p>
+                                <p>
+                                    <label for="telephone">Telephone Number</label><br>
+                                    <input type="text" pattern="[4]{1}[4][-]{1}[0-9]{3}[-][0-9]{3}[-][0-9]{4}" name="telephone">
+                                    <small>UK phone number format. For example: 44-207-882-1234 </small>
+                                </p>
+                            </fieldset>
+                            <fieldset>
+                                <p>
+                                    <label for="address">Address</label><br>
+                                    <input type="text" name="address">
+                                </p>
+                                <p>
+                                    <label for="city: ">City</label><br>
+                                    <input type="text" list="cities" name="cities">
+                                    <datalist id="cities">
+                                        <option value="New Delhi"></option>
+                                        <option value="London"></option>
+                                        <option value="Abu Dhabi"></option>
+                                        <option value="Dubai"></option>
+                                        <option value="New York"></option>
+                                        <option value="Tokyo"></option>
+                                    </datalist>
+                                </p>
+                                <p>
+                                    <label for="postcode">Postcode</label><br>
+                                    <input type="text" name="postcode">
+                                </p>
+                            </fieldset>
+                            <fieldset class="last">
+                                <footer>
+                                    <label for="option:">Please keep me informed about future shirt designs</label>
+                                    <input type="checkbox" name="accept" value="yes"><br>
+                                    <input class="submit" type="submit">
+                                    <input class="reset" type="reset">
+                                </footer>
+                            </fieldset>
+                    </section>
+                </fieldset>
+            </form>
+        </body>
+    </head>
+</html>
