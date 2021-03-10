@@ -1,0 +1,7 @@
+.left,.right,html,h1,h2,h3,aside,.navigation,h1,h2,h3,h4,h5,h6,p,a,li,ul,figure,img,div,body,section,nav,.left,.Research,.navigation,#main, article{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}

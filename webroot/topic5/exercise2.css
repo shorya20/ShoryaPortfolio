@@ -1,0 +1,161 @@
+section h1{
+    float: left;
+    width: 8em;
+    margin-top:0.2em;
+    font-size: large;
+    font-family: sans-serif;
+}
+.left .Research{
+    height: 4em;
+    top: 4em;
+    position: absolute;
+}
+.left .navigation{
+    position: absolute;
+    background-color:whitesmoke;
+    top: 12em;
+    width: 15em;
+    height: 7em;
+}
+.left .navigation h3{
+    margin-top: 0.4em;
+}
+.left .navigation a{
+    text-decoration: none;
+}
+.left .Skills{
+    position: absolute;
+    width: 15em;
+    top:20em;
+}
+.left .Skills ul{
+    padding: 1em;
+    background-color:whitesmoke;
+}
+.left .Skills li{
+    background-color: white;
+}
+.right #MyHobbies{
+    position: absolute;
+}
+.right #Movies{
+    position: absolute;
+    top: 14em;
+}
+.right #MyHobbies,.right #Movies{
+    background-color: whitesmoke;
+    width: 15em;
+}
+.right #Movies,.right #MyHobbies{
+    padding: 1em;
+    margin-top: 2em;
+}
+.right #Movies li,.right #MyHobbies li{
+    font-family: sans-serif;
+    padding-top: 1em;
+    font-size: small;
+    background-color: white;
+}
+.right #MyHobbies h1,.right #Movies h1{
+    padding-left: 1em;
+}
+.right #Movies ul{
+    list-style-type: none;
+}
+.right #MyHobbies ul{
+    list-style-type: none;
+}
+nav{
+    height: 2em;
+    background-color: aquamarine;
+}
+nav ul{
+    margin-top: 0.3em;
+    float: left;
+    width: 40em;
+}
+nav li{
+    font-size: small;
+    font-family: sans-serif;
+    padding: 1.5em;
+    display: block;
+    display: inline;
+}
+.Research{
+    background-color:lightgoldenrodyellow;
+    width: 15em;
+}
+.Research h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    color:peru;
+}
+.left{
+    float: left;
+    width: 15em;
+}
+#main{
+    margin-left:18em;
+    margin-right: 18em;
+}
+#AboutMyself{
+    margin-top: 1em;
+}
+#main p{
+    margin-top: 0.5em;
+}
+.right{
+    float: right;
+    width: 15em;
+}
+#Education{
+    margin-top: 12em;
+    border-top: 1pt solid grey;
+    width: 52em;
+}
+#photo{
+    float: right;
+    margin-right: 8em;
+}
+#photo .profile{
+    width: 8em;
+}
+#AboutMyself h1, #AboutMyself p{
+    float: left;
+    margin-right: 5em;
+}
+#Education ul{
+    margin-left: 1em;
+}
+.navigation ul{
+    list-style-type: none;
+}
+.Skills ul{
+    list-style-type: none;
+}
+
+.Skills h1,#MyHobbies h1,#Movies h1{
+    font-family: sans-serif;
+    background-color:lightgreen;
+    height: 2em;
+    padding-top: 1em;
+}
+.Skills img{
+    float: left;
+}
+.Skills ul{
+    background-color: white;
+}
+.Skills li{
+    padding: 1.5em;
+    font-family: sans-serif;
+    font-size: small;
+}
+.left .navigation h3{
+    font-family: sans-serif;
+    font-size: medium;
+}
+
+
+
+
