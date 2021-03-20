@@ -1,0 +1,147 @@
+body{
+    background-color: white;
+}
+ul{
+    list-style-type: none;
+}
+nav{
+    background-color: teal;
+    padding-bottom: 1em;
+}
+nav img{
+    width: 12em;
+}
+nav li a:hover{
+    color: blue;
+}
+nav li a{
+    text-decoration: none;
+    color: lime;
+    font-family: sans-serif;
+    padding: 2em;
+}
+nav{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 40px;
+    box-shadow: 2px 2px lightslategray;
+}
+figure .sample{
+    width: 100%;
+    height: 30em;
+}
+.header hgroup{
+    position: absolute;
+    top:15em;
+    left: 30em;
+    text-align: center;
+}
+.header h1{
+    background-color: teal;
+    opacity:0.9;
+    font-size: 3em;
+    margin-bottom: 0.2em;
+}
+.header p,.header h1{
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.header p{
+    font-size: medium;
+}
+#About_Myself{
+    margin-right: 18em;
+    height: 40em;
+    box-shadow: 2px 2px 12px lightgrey;
+}
+.main{
+    padding-top: 6em;
+}
+#About_Myself h1{
+    margin-top: 2em;
+    float: right;
+    width: 35em;
+    text-align: center;
+    font-size: 2em;
+    font-family:sans-serif;
+    color: rgb(71, 103, 145);
+    font-weight: bold;
+}
+aside h2{
+    position: absolute;
+    top:40em;
+    left: 74em;
+    font-size: large;
+    font-family: sans-serif;
+}
+aside{
+    border-left: 1pt solid grey;
+    float: right;
+    width: 13em;
+    height: 18em;
+    box-shadow: 2px 2px 12px lightgrey;
+}
+button{
+    margin-left: 0.5em;
+    margin-top: 13em;
+    width: 15em;
+    height: 4em;
+    border-radius: 10px;
+    border: 4pt solid black;
+    background-color: whitesmoke;
+}
+.blog a,.login a{
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: larger;
+    font-weight: bold;
+    color: black;
+}
+.my_figure{
+    margin-top: 3em;
+    float: left;
+    width: 13em;
+}
+.my_image{
+    opacity: 0.7;
+    width: 13em;
+}
+.my_text{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 19em;
+    margin-left: 25em;
+}
+figcaption{
+    text-align: center;
+    font-family:cursive;
+    font-size: small;
+}
+.blog{
+    margin-left: 27em;
+}
+.blog:hover,.login:hover{
+    background-color: darkgreen;
+}
+footer{
+    height: 10em;
+    width: 20em;
+    margin-top: 5em;
+    box-shadow: 2px 2px 12px grey;
+}
+footer img{
+    margin-left: 3em;
+    width: 3em;
+    border-radius: 30%;
+}
+#Contact{
+    padding: 2em;
+}
+#Contact h1{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    padding-left: 2em;
+    font-size: 1.4em;
+    padding-bottom: 1em;
+}
+

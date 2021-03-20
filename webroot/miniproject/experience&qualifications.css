@@ -1,0 +1,135 @@
+body{
+    background-color: white;
+}
+ul{
+    list-style-type: none;
+}
+nav{
+    position: relative;
+    z-index: 5;
+    box-shadow: 2px 2px 12px black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: yellow;
+}
+nav img,li img{
+    width: 12em;
+}
+nav li a{
+    text-decoration: none;
+    color: teal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 4em;
+}
+figure img{
+    opacity: 0.7;
+    height: 30em;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+header h1{
+    z-index: 4;
+    font-size: 3em;
+    position: absolute;
+    top:5em;
+    left: 13em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color:crimson;
+    opacity: 0.8;
+    color: white;
+}
+#main .proficiency ,#main .experiences{
+    padding-left: 4em;
+    margin-top: 5em;
+    width: 80%;
+    height: 45em;
+}
+.proficiency h1,.experiences h1,.Education h1,.Qualification h1{
+    font-weight: lighter;
+    font-family: sans-serif;
+    font-size: 2em;
+    padding-bottom: 2em;
+    border-bottom: 1pt solid grey;
+}
+.proficiency p{
+    margin-top: 5em;
+    margin-bottom: 2em;
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+caption{
+    font-size: 110%;
+    font-family:monospace;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+td{
+    padding: 1.2em;
+}
+table{
+    border-collapse: collapse;
+    border: 1pt solid grey;
+    height: 15em;
+    width: 100%;
+}
+th{
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-size: large;
+    font-family: cursive;
+}
+td{
+    font-family: sans-serif;
+}
+td,th{
+    text-align: center;
+    padding: 1em;
+}
+tbody tr:nth-child(odd){
+    background-color: whitesmoke;
+}
+.icon{
+    margin-top: 1em;
+    margin-left: 1em;
+    float: left;
+    width: 10em;
+}
+.first_details p{
+    font-family: fantasy;
+    padding-top: 7em;
+    margin-left: 14em; 
+}
+.first_box,.Education ul,.Qualification ul{
+    width: 50%;
+    margin-top: 5em;
+    height: 13em;
+    box-shadow: 2px 2px 12px grey;
+}
+.Education section,.Qualification section{
+    padding: 2em;
+    width: 100%;
+    height: 20em;
+}
+.Education ul,.Qualification ul{
+    width: 20em;
+    height: 12em;
+    border: 1pt solid black;
+    padding-top: 4em;
+}
+.Education li{
+    margin-left: 3em;
+}
+.Qualification{
+    padding-top: 10em;
+}
+.Qualification li{
+    margin-left: 1em;
+    margin-top: 3em;
+    font-size: large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
