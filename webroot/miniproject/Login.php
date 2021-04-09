@@ -14,12 +14,12 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     $sql = "INSERT INTO USERS(email,password) VALUES ('shoryaoct20@gmail.com','Shorya!')";
     if($conn->query($sql)==TRUE){
         if (isset($_POST["usname"], $_POST["pass"])) {
+            session_start();
             $username = $_POST["usname"];
             $password = $_POST["pass"];
             $select1 = "SELECT * from USERS WHERE email = '$username' and password ='$password'";
             $result1=mysql_query($select1);
             if(mysql_num_rows($result1)>0){
-                session_start();
                 echo "<h6> Registration successful";
                 $_SESSION['usname']=$username;
                 $_SESSION['password']=$password;
