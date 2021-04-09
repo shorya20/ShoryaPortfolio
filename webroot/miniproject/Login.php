@@ -17,9 +17,10 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
             session_start();
             $username = $_POST["usname"];
             $password = $_POST["pass"];
-            $result = mysql_query("SELECT email, password FROM $sql WHERE email = '".$username."' and password ='".$password."'");
-            $count = mysql_num_rows($result);
-            if($count>0){
+            $select1 = "SELECT * from USERS WHERE email = '$username' and password ='$password'";
+            $result1=mysql_query($select1);
+            if(mysql_num_rows($result1)>0){
+                echo "<h6> Registration successful"
                 $_SESSION["usname"]=$username;
                 $_SESSION["password"]=$password;
                 $_SESSION["status"]=true;
