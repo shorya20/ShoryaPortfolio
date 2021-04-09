@@ -17,7 +17,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
             session_start();
             $username = $_POST["usname"];
             $password = $_POST["pass"];
-            $result = mysql_query("SELECT email, pass FROM $sql2 WHERE email = '.$username.' AND pass ='.$password.'");
+            $result = mysql_query("SELECT email, pass FROM $sql WHERE email = '.$username.' AND pass ='.$password.'");
             $count = mysql_num_rows($result);
             if($count>0){
                 $_SESSION["usname"]=$username;
