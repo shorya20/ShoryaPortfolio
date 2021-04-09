@@ -10,26 +10,29 @@ $conn = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
 if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
 }
-if($conn->query($sql1)==TRUE){
-    if (isset($_POST["usname"], $_POST["pass"])) {
-        session_start();
-        $username = $_POST["usname"];
-        $password = $_POST["pass"];
-        $result = mysql_query("SELECT email, pass FROM $sql2 WHERE email = '.$username.' AND pass ='.$password.'");
-        $count = mysql_num_rows($result);
-        if($count>0){
-            $_SESSION["usname"]=$username;
-            $_SESSION["password"]=$password;
-            $_SESSION["status"]=true;
-            header("location: addPost.php");
-        }
-        else{
-            echo "Wrong username or password";
+if($_SERVER["REQUEST_METHOD"]=="POST"){
+    $sql = "INSERT INTO USERS(email,password) VALUES ('shoryaoct20@gmail.com','Shorya!')";
+    if($conn->query($sql)==TRUE){
+        if (isset($_POST["usname"], $_POST["pass"])) {
+            session_start();
+            $username = $_POST["usname"];
+            $password = $_POST["pass"];
+            $result = mysql_query("SELECT email, pass FROM $sql2 WHERE email = '.$username.' AND pass ='.$password.'");
+            $count = mysql_num_rows($result);
+            if($count>0){
+                $_SESSION["usname"]=$username;
+                $_SESSION["password"]=$password;
+                $_SESSION["status"]=true;
+                header("location: addPost.php");
+            }
+            else{
+                echo "Wrong username or password";
+            }
         }
     }
-}
-else{
-    echo "Error: ". $sql. "<br>" . $conn->error;
+    else{
+        echo "Error: ". $sql. "<br>" . $conn->error;
+    }
 }
 $conn->close();
 ?>
