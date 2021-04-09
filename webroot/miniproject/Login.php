@@ -18,8 +18,7 @@ if($conn->query($sql1)==TRUE){
     if ($_SERVER["REQUEST METHOD "]=="POST") {
         $username = $_POST["usname"];
         $password = $_POST["pass"];
-        $sql2 = "SELECT * FROM email WHERE username= '$username' and password='$password'";
-        $result = mysql_query($sql2);
+        $result = mysql_query("SELECT email,password FROM $sql1 WHERE email = '".$username."' AND password ='".$password."'");
         $count = mysql_num_rows($result);
         echo $count;
         if($count==1){
