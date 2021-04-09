@@ -15,15 +15,15 @@ $password = "Shorya!";
 $sql1 = "INSERT INTO USERS (email, password) VALUES ($emailaddress,$password)";
 if($conn->query($sql1)==TRUE){
     session_start();
-    if ($_SERVER["REQUEST METHOD "]=="POST") {
+    if (isset($_POST["usname"], $_POST["pass"])) {
         $username = $_POST["usname"];
         $password = $_POST["pass"];
         $result = mysql_query("SELECT email,password FROM $sql1 WHERE email = '".$username."' AND password ='".$password."'");
         $count = mysql_num_rows($result);
-        echo $count;
         if($count==1){
-            session_register("usname");
-            session_register("pass");
+            $_SESSION["usname"]=$username;
+            $_SESSION["password"]=$password;
+            $_SESSION["status"]=true;
             header("Location: addPost.php");
         }
         else{
