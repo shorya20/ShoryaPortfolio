@@ -10,13 +10,6 @@ $conn = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
 if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
 }
-$emailaddress = "shoryaoct20@gmail.com";
-$password = "Shorya!";
-$sql1 = "CREATE TABLE USERS(
-email VARCHAR(255),
-password VARCHAR(255)
-)";
-$sql2 = "INSERT INTO USERS (email, pass) VALUES ($emailaddress,$password)";
 if($conn->query($sql1)==TRUE){
     if (isset($_POST["usname"], $_POST["pass"])) {
         session_start();
