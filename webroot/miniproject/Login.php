@@ -12,13 +12,17 @@ die("Connection failed: " . $conn->connect_error);
 }
 $emailaddress = "shoryaoct20@gmail.com";
 $password = "Shorya!";
+$sql1 = "CREATE TABLE USERS(
+email VARCHAR(255),
+password VARCHAR(255)
+)";
 $sql1 = "INSERT INTO USERS (email, password) VALUES ($emailaddress,$password)";
 if($conn->query($sql1)==TRUE){
-    session_start();
     if (isset($_POST["usname"], $_POST["pass"])) {
+        session_start();
         $username = $_POST["usname"];
         $password = $_POST["pass"];
-        $result = mysql_query("SELECT email,password FROM $sql1 WHERE email = '".$username."' AND password ='".$password."'");
+        $result = mysql_query("SELECT email,password FROM $sql1 WHERE email = .'$username'. AND password ='.$password.'");
         $count = mysql_num_rows($result);
         if($count==1){
             $_SESSION["usname"]=$username;
