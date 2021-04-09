@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <title>Login</title>
+    <head>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="form.css">
+    </head>
+    <body>
+        <form method="POST" action="Login.php">
+            <fieldset>
+                <h1>Login</h1> <br>
+                <section>
+                    <div class="username">
+                        <p><label for="email">Email: </label>
+                            <input class="email" type="email" placeholder="Email" name="usname" required>
+                        </p>
+                    </div>
+                    <div class="password">
+                        <p><label for="password">Password: </label>
+                            <input class="pass" type="password" name="pass" placeholder="Password" minlength="6" pattern="[A-Z]{1}[a-z!?.]{6}" required>
+                            <small>Minimum 6 letters followed by a single symbol and it should start with an uppercase letter and end with (?!.) symbols</small>
+                        </p>
+                    </div>
+                    <div class="login">
+                        <p><label for="submit details"></label>
+                            <input class="submit" type="submit" value="Login">
+                        </p>
+                    </div>
+                </section>
+            </fieldset>
+        </form>
+    </body>
+</html>
