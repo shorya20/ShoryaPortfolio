@@ -16,19 +16,19 @@ $sql1 = "CREATE TABLE USERS(
 email VARCHAR(255),
 password VARCHAR(255)
 )";
-$sql1 = "INSERT INTO USERS (email, password) VALUES ($emailaddress,$password)";
+$sql2 = "INSERT INTO USERS (email, pass) VALUES ($emailaddress,$password)";
 if($conn->query($sql1)==TRUE){
     if (isset($_POST["usname"], $_POST["pass"])) {
         session_start();
         $username = $_POST["usname"];
         $password = $_POST["pass"];
-        $result = mysql_query("SELECT email,password FROM $sql1 WHERE email = .'$username'. AND password ='.$password.'");
+        $result = mysql_query("SELECT email, pass FROM $sql2 WHERE email = '.$username.' AND pass ='.$password.'");
         $count = mysql_num_rows($result);
-        if($count==1){
+        if($count>0){
             $_SESSION["usname"]=$username;
             $_SESSION["password"]=$password;
             $_SESSION["status"]=true;
-            header("Location: addPost.php");
+            header("location: addPost.php");
         }
         else{
             echo "Wrong username or password";
