@@ -1,9 +1,11 @@
+/* The CSS here is for 2 HTML files which are the experience and qualifications file. Both will have similar layouts with slight differences within their div classes. */
 body{
     background-color: white;
 }
 ul{
     list-style-type: none;
 }
+/* Navigation bar on the top which will have to have a Z-index number higher than the next element to appear on top */
 nav{
     position: relative;
     z-index: 5;
@@ -13,6 +15,7 @@ nav{
     align-items: center;
     background-color: yellow;
 }
+/*Logo of the student on the navigation bar */
 nav img,li img{
     width: 12em;
 }
@@ -22,6 +25,7 @@ nav li a{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 4em;
 }
+/*Figure element which will appear underneath the navigation bar having a lower z-index value */
 figure img{
     opacity: 0.7;
     height: 30em;
@@ -40,12 +44,14 @@ header h1{
     opacity: 0.8;
     color: white;
 }
+/*Main class of experiences div in the html page and proficiency div. Both have specific values */
 #main .proficiency ,#main .experiences{
     padding-left: 4em;
     margin-top: 5em;
     width: 80%;
     height: 45em;
 }
+/*4 divs from both html pages have their specific layouts which are similar*/
 .proficiency h1,.experiences h1,.Education h1,.Qualification h1{
     font-weight: lighter;
     font-family: sans-serif;
@@ -88,9 +94,11 @@ td,th{
     text-align: center;
     padding: 1em;
 }
+/*nth child of the table body will have a whitesmoke background */
 tbody tr:nth-child(odd){
     background-color: whitesmoke;
 }
+/*Icon of the html page experiences */
 .icon{
     margin-top: 1em;
     margin-left: 1em;

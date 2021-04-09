@@ -1,6 +1,8 @@
+/* CSS of the blog webpage */
 body{
     background-color:azure;
 }
+/*navigation bar will have an image link which links back the HTML page */
 nav{
     height: 3em;
     padding: 1em;
@@ -132,7 +134,7 @@ fieldset h1{
     display: inline-block;
     margin-left: 12em;
 }
-.submit input,.reset input{
+.submit .input,.reset .input{
     padding: 1em;
     width: 8em;
     height: 5em;
@@ -141,7 +143,10 @@ fieldset h1{
     border-radius: 70%;
     border: 2pt solid yellow;
 }
-.submit input:hover,.reset input:hover{
+#title,#body{
+    border: 1pt solid black;
+}
+.submit .input:hover,.reset .input:hover{
     background-color: tomato;
 }
 .title input{

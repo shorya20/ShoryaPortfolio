@@ -1,6 +1,8 @@
+/* CSS file for Login.html */
 body{
     background-color: cornsilk;
 }
+/* Fieldset box-model */
 fieldset{
     outline: 3pt solid darkslategray;
     border: 3pt solid darkblue;
