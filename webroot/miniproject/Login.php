@@ -11,13 +11,13 @@ if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
 }
 if($_SERVER["REQUEST_METHOD"]=="POST"){
-    $sql = "INSERT INTO USERS(email,pass) VALUES ('shoryaoct20@gmail.com','Shorya!')";
+    $sql = "INSERT INTO USERS(email,password) VALUES ('shoryaoct20@gmail.com','Shorya!')";
     if($conn->query($sql)==TRUE){
         if (isset($_POST["usname"], $_POST["pass"])) {
             session_start();
             $username = $_POST["usname"];
             $password = $_POST["pass"];
-            $result = mysql_query("SELECT email, pass FROM $sql WHERE email = '".$username."' and password ='".$password."'");
+            $result = mysql_query("SELECT email, password FROM $sql WHERE email = '".$username."' and password ='".$password."'");
             $count = mysql_num_rows($result);
             if($count>0){
                 $_SESSION["usname"]=$username;
