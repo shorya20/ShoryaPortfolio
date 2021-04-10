@@ -17,20 +17,10 @@
         $body = $_POST['body'];
         $sql = "INSERT INTO INPUT(time,date,title,body) VALUES('$tabletime','$date','$title','$body')";
         if($conn->query($sql)==TRUE){
-            $timearray=array();
-            $datearray=array();
-            $titlearray=array();
-            $bodyarray=array();
-            date_default_timezone_set('UTC');
-            $timearray[]=$tabletime;
-            $datearray[]=$date;
-            asort($datearray);
-            $titlearray[]=$title;
-            $bodyarray[]=$body;
-            $_SESSION['timearray']=$timearray;
-            $_SESSION['datearray']=$datearray;
-            $_SESSION['titlearray']=$titlearray;
-            $_SESSION['bodyarray']=$bodyarray;
+            $_SESSION['time']=$tabletime;
+            $_SESSION['date']=$date;
+            $_SESSION['title']=$title;
+            $_SESSION['body']=$body;
         header('location:viewBlog.php');
         }
         else{
