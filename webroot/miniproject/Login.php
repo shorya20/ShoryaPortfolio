@@ -11,6 +11,8 @@ if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
 }
 if($_SERVER["REQUEST_METHOD"]=="POST"){
+    $username = $_POST["usname"];
+    $password = $_POST["pass"];
     $_SESSION['usname']=$username;
     $_SESSION['password']=$password;
     $select1 = "SELECT * from USERS WHERE email = '".$username."' and password ='".$password."'";
