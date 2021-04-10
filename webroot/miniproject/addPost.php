@@ -15,7 +15,7 @@
         $date=date('d-M-Y');
         $title = $_POST['title'];
         $body = $_POST['body'];
-        $sql = "INSERT INTO INPUT(time,date,title,body) VALUES($tabletime,$date,$title,$body)";
+        $sql = "INSERT INTO INPUT(time,date,title,body) VALUES('$tabletime','$date','$title','$body')";
         if($conn->query($sql)==TRUE){
             $timearray=array();
             $datearray=array();
