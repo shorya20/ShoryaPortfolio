@@ -29,6 +29,7 @@
             <article>
                 <section>
                     <?php
+                    session_start();
                         echo"<table>";
                             echo"<tr><td><small>".$_SESSION['time']."</small><br><h1>".$_SESSION['title']."</h1><br><p>".$_SESSION['body']."</p></td></tr>";
                         echo "</table>";
