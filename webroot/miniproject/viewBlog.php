@@ -30,16 +30,16 @@
                 <section>
                     <table>
                         <?php
-                        $length = count($_SESSION-['datearray']);
-                        for(i=0;i<$length;i++){
-                            printf("<tr><td class='title'><small></small><h1>$_SESSION['title'][$i]</h1><p>$_SESSION['body'][$i]</p></td></tr>");
-                        }
-                        if(!isset($_SESSION["usname"])){
-                            printf("<a href = 'Login.html'>Add Post</a>")
-                        }
-                        else{
-                            printf("<a href = 'addEntry.php'>Add Post</a>")
-                        }
+                            $length = count($_SESSION['datearray']);
+                            for(i=0;i<$length;i++){
+                                printf("<tr><td class='title'><small></small><h1>$_SESSION['title'][$i]</h1><p>$_SESSION['body'][$i]</p></td></tr>");
+                            }
+                            if(!isset($_SESSION["usname"])){
+                                printf("<a href = 'Login.html'>Add Post</a>")
+                            }
+                            else{
+                                printf("<a href = 'addEntry.php'>Add Post</a>")
+                            }
                         ?>
                     </table>
                 </section>
