@@ -32,7 +32,7 @@
                         <?php
                             $length = count($_SESSION['datearray']);
                             for($i=0;$i<$length;$i++){
-                                printf("<tr><td class='title'><small></small><h1>$_SESSION['titlearray'][$i]</h1><p>$_SESSION['bodyarray'][$i]</p></td></tr>");
+                                printf("<tr><td class='title'><small></small><h1>$_SESSION['titlearray']['$i']</h1><p>$_SESSION['bodyarray'][$i]</p></td></tr>");
                             }
                             if(!isset($_SESSION["usname"])){
                                 printf("<a href = 'Login.html'>Add Post</a>")
