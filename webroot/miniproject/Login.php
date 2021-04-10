@@ -23,7 +23,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
                 echo "<h6> Registration successful";
                 $_SESSION['usname']=$username;
                 $_SESSION['password']=$password;
-                header("location: addPost.php");
+                header("location: addEntry.php");
             }
             else{
                 echo "Wrong username or password";
