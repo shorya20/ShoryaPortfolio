@@ -11,6 +11,10 @@
     die("Connection failed: " . $conn->connect_error);
     }
     if($_SERVER["REQUEST_METHOD"]=="POST"){
+        $tabletime=date("h:i");
+        $date=date('d-M-Y');
+        $title = $_POST['title'];
+        $body = $_POST['body'];
         $sql = "INSERT INTO INPUT(time,date,title,body) VALUES($tabletime,$date,$title,$body)";
         if($conn->query($sql)==TRUE){
             $timearray=array();
@@ -18,14 +22,10 @@
             $titlearray=array();
             $bodyarray=array();
             date_default_timezone_set('UTC');
-            $tabletime=date("h:i");
             $timearray[]=$tabletime;
-            $date=date('d-M-Y');
             $datearray[]=$date;
             asort($datearray);
-            $title = $_POST['title'];
             $titlearray[]=$title;
-            $body = $_POST['body'];
             $bodyarray[]=$body;
             $_SESSION['timearray']=$timearray;
             $_SESSION['datearray']=$datearray;
