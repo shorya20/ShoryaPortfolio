@@ -34,7 +34,7 @@
                     $title=$_SESSION['title'];
                     $body=$_SESSION['body'];
                         echo"<table>";
-                            echo"<tr><td><small>".$time."</small><br><h1>".$title."</h1><br><p>".$body."</p></td></tr>";
+                            echo"<tr><td><small>$time</small><br><h1>$title</h1><br><p>$body</p></td></tr>";
                         echo "</table>";
                     ?>
                 </section>
