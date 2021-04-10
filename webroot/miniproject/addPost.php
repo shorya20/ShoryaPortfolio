@@ -17,6 +17,10 @@
         $body = $_POST['body'];
         $sql = "INSERT INTO INPUT(time,date,title,body) VALUES('$tabletime','$date','$title','$body')";
         if($conn->query($sql)==TRUE){
+            $tabletime=date("h:i");
+            $date=date('d-M-Y');
+            $title = $_POST['title'];
+            $body = $_POST['body'];
             $_SESSION['time']=$tabletime;
             $_SESSION['date']=$date;
             $_SESSION['title']=$title;
