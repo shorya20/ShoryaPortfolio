@@ -30,8 +30,11 @@
                 <section>
                     <?php
                     session_start();
+                    $time=$_SESSION['time'];
+                    $title=$_SESSION['title'];
+                    $body=$_SESSION['body'];
                         echo"<table>";
-                            echo"<tr><td><small>".$_SESSION['time']."</small><br><h1>".$_SESSION['title']."</h1><br><p>".$_SESSION['body']."</p></td></tr>";
+                            echo"<tr><td><small>".$time."</small><br><h1>".$title."</h1><br><p>".$body."</p></td></tr>";
                         echo "</table>";
                     ?>
                 </section>
