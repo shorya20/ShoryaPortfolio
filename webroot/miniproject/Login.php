@@ -20,7 +20,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
             $_SESSION['usname']=$username;
             $_SESSION['password']=$password;
             $result1=mysqli_query($conn,$select1);
-            if(mysqli_num_rows($select1)>0){
+            if(mysqli_num_rows($result1)>0){
                 header("location: addEntry.php");
             }
             else{
