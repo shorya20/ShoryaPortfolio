@@ -63,7 +63,7 @@
         <div class="middle">
             <article>
                 <section class="blog_box_outside">
-                    <form method="POST" action="addPost.php" id="myform" onsubmit="return checkempty()">
+                    <form method="POST" action="addPost.php" id="myform">
                         <fieldset class="blog_box">
                             <h1>Add Blog</h1>
                             <section>
@@ -83,7 +83,7 @@
                                     <button class="input" type="button" onclick="preview()">Preview your post</a></button>
                                 </div>   
                                 <div class="submit">
-                                    <button class="input" type="submit">Submit</button>
+                                    <button class="input" type="submit" onclick="return checkempty()">Submit</button>
                                 </div>
                                 <div class="reset">
                                     <button class="input" type="button" onclick="click1()">Reset</button>
