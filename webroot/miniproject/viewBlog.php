@@ -30,7 +30,7 @@
                 <section>
                     <?php
                         session_start();
-                        echo $_SESSION['time'];
+                         print($_SESSION['time']);
                     ?>
                 </section>
             </article>
