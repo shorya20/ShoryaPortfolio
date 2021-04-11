@@ -63,7 +63,7 @@
         <div class="middle">
             <article>
                 <section class="blog_box_outside">
-                    <form method="POST" action="addPost.php" id="myform" onsubmit="checkempty()">
+                    <form method="POST" action="addPost.php" id="myform" onsubmit="return checkempty()">
                         <fieldset class="blog_box">
                             <h1>Add Blog</h1>
                             <section>
