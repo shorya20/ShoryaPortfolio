@@ -106,9 +106,9 @@ figure img{
     border-bottom: 1pt solid white;
 }
 .view small{
-    margin-left: 10em;
+    margin-left: 20em;
     color: white;
-    font-size: 0.4em;
+    font-size: 1em;
 }
 .view table h1{
     font-size: large;
