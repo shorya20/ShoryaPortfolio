@@ -29,7 +29,8 @@
                 <p>
                 <?php
                         session_start();
-                        echo "Title: ".$_SESSION['title'];
+                        echo "<table>";
+                        echo "<tr><td class='entry'><small>".$_SESSION['time']."</small></br><h1>".$_SESSION['title']."</h1></br><p>".$_SESSION['body']."</p></td></tr>";
                     ?>
                 </p>
         </div>
