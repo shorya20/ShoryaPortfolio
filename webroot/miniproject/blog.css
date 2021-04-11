@@ -93,7 +93,8 @@ figure img{
     margin-left: 20em;
 }
 .view{
-    margin-right: 16em;
+    margin-left: 20em;
+    margin-right: 20em;
 }
 .view table{
     background-color: lawngreen;
