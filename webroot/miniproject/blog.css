@@ -93,10 +93,9 @@ figure img{
     margin-left: 20em;
 }
 .view{
-    margin-left: 16em;
+    margin-right: 16em;
 }
 .view table{
-    width: 100%;
     background-color: lawngreen;
     border-bottom: 5pt solid black;   
 }
