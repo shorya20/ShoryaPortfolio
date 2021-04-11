@@ -53,6 +53,7 @@
                 }
                 else{
                     document.body.removeEventListener("click",stopE);
+                    document.getElementById("myform").submit();
                 }
             }
         </script>
