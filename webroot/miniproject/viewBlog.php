@@ -8,7 +8,7 @@
     <body>
         <header>
             <nav>
-                <a href="portfolio homepage.html" class="logo"> <img src="Screenshot 2021-03-17 131113.png" alt="logo"></a>
+                <a href="index.php" class="logo"> <img src="Screenshot 2021-03-17 131113.png" alt="logo"></a>
                 <h1>Blog homepage of Shorya Sinha</h1>
             </nav>
             <figure><img src="index.png" alt="blogimg"></figure>

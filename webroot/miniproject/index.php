@@ -8,15 +8,15 @@
     <body>
         <header>
             <nav>
-                <a href="portfolio homepage.html" class="logo"><img src="Screenshot 2021-03-17 131113.png" alt="logo"></a>
+                <a href="index.php" class="logo"><img src="Screenshot 2021-03-17 131113.png" alt="logo"></a>
                 <ul>
                     <li>
                         <a href="#About_Myself">About Myself</a>
                         <a href="qualifications.html">Qualifications</a>
                         <a href="experience.html">Experience</a>
                         <a href="#Contact">Contact Us</a>
-                        <a href="blog.html">Blog</a>
-                        <a href="login.html">Login</a>
+                        <a href="viewBlog.php">Blog</a>
+                        <a href="Login.html">Login</a>
                     </li>
                 </ul>
             </nav>
