@@ -26,16 +26,12 @@
             </aside> 
         </div>
         <div class="view">
-            <article>
-                <section>
                 <p>
                 <?php
                         session_start();
-                        echo("{$_SESSION['title']}");
+                        echo "Title: ".$_SESSION['title'];
                     ?>
                 </p>
-                </section>
-            </article>
         </div>
         <div class="right">
             <aside class="redirect">
