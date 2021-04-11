@@ -28,10 +28,12 @@
         <div class="view">
             <article>
                 <section>
-                    <?php
+                <p>
+                <?php
                         session_start();
-                         print("<h1>Hello</h1>")
+                        echo("{$_SESSION['title']}");
                     ?>
+                </p>
                 </section>
             </article>
         </div>
