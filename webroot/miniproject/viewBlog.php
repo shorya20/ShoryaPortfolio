@@ -21,7 +21,14 @@
             <aside>
                 <div class="homepage">
                     <h1>Homepage Link</h1>
-                    <button class="portfolio"><?php if (isset($_POST["usname"], $_POST["pass"])) {echo "<a href = 'addEntry.php'>Click here to add a new Post</a>"}else{echo "<a href='Login.html'>Click here to add a new Post!</a>"} ?> 
+                    <button class="portfolio"><?php 
+                    if(isset($_POST["usname"], $_POST["pass"])){
+                        echo "<a href = 'addEntry.php'>Click here to add a new Post</a>";
+                    }
+                    else{
+                        echo "<a href='Login.html'>Click here to add a new Post!</a>";
+                    }
+                    ?> 
                 </div>            
             </aside> 
         </div>
