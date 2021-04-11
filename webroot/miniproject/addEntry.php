@@ -80,7 +80,7 @@
                                     </p>
                                 </div>
                                 <div class="preview">
-                                    <button class="input" type="button" onclick="preview()">Preview your post</a></button>
+                                    <button class="input" type="button" onclick="preview()">Preview your post</button>
                                 </div>   
                                 <div class="submit">
                                     <button class="input" type="submit" onclick="return checkempty()">Submit</button>
