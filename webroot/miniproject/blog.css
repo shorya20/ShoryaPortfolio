@@ -181,7 +181,7 @@ fieldset h1{
 #title,#body{
     border: 1pt solid black;
 }
-.submit .input:hover,.reset .input:hover,.preview:hover{
+.submit .input:hover,.reset .input:hover,.preview .input:hover{
     background-color: tomato;
 }
 .title input{
