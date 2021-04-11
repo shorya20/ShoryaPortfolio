@@ -50,7 +50,9 @@
                     });
                 }
                 else{
-                    document.getElementById("myform").unbind("click");
+                    document.getElementById("myform").removeEventListener("click",function(event){
+                        event.preventDefault();
+                    })
                 }
             }
         </script>
