@@ -76,13 +76,13 @@
                                     </p>
                                 </div>
                                 <div class="preview">
-                                    <button class="input" onclick="preview()">Preview your post</a></button>
+                                    <button class="input" type="button" onclick="preview()">Preview your post</a></button>
                                 </div>   
                                 <div class="submit">
-                                    <button class="input" id="submit" onclick="checkempty()">Submit</button>
+                                    <button class="input" type="button" id="submit" onclick="checkempty()">Submit</button>
                                 </div>
                                 <div class="reset">
-                                    <button class="input" onclick="click1()">Reset</button>
+                                    <button class="input" type="button" onclick="click1()">Reset</button>
                                 </div>
                             </section>
                         </fieldset>
