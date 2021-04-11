@@ -30,9 +30,7 @@
                 <section>
                     <?php
                         session_start();
-                         foreach ($_SESSION as $key=>$value){
-                             echo $key." ".$val."<br/>";
-                         }
+                         print("<h1>Hello</h1>")
                     ?>
                 </section>
             </article>
