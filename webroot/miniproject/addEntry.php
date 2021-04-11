@@ -63,14 +63,14 @@
         <div class="middle">
             <article>
                 <section class="blog_box_outside">
-                    <form method="POST" action="addPost.php" id="myform">
+                    <form method="POST" action="addPost.php" id="myform" onsubmit="checkempty()">
                         <fieldset class="blog_box">
                             <h1>Add Blog</h1>
                             <section>
                                 <div class="title">
                                     <p>
                                         <label for="Title"></label>
-                                            <input type="text" name="title" placeholder="Title" id="title" onsubmit="checkempty()">
+                                            <input type="text" name="title" placeholder="Title" id="title">
                                     </p>
                                 </div>
                                 <div class="body">
