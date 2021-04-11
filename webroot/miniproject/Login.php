@@ -17,11 +17,10 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     if($conn->query($select1)==TRUE){
         if (isset($_POST["usname"], $_POST["pass"])) {
             session_start();
-            $select1 = "DELETE FROM INPUT";
             $_SESSION['usname']=$username;
             $_SESSION['password']=$password;
             $result1=mysqli_query($conn,$select1);
-            if(mysqli_num_rows($result1)>0){
+            if(mysqli_num_rows($select1)>0){
                 header("location: addEntry.php");
             }
             else{

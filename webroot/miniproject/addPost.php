@@ -26,6 +26,7 @@
             $_SESSION['date']=$date;
             $_SESSION['title']=$title;
             $_SESSION['body']=$body;
+            $sql="DELETE FROM INPUT";
         header('location:viewBlog.php');
         }
         else{
