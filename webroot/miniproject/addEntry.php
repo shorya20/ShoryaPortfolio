@@ -6,6 +6,9 @@
     </head>
     <body>
         <script>
+            function stopE(e){
+                e.preventDefault();
+            }
             function click1(){
                 var title=document.getElementById("title").value;
                 var body = document.getElementById("body").value;
@@ -29,30 +32,22 @@
                     document.getElementById("title").style.border="2pt solid red";
                     document.getElementById("body").style.border="2pt solid green";
                     window.alert("Please enter a title");
-                    document.getElementById("myform").addEventListener("click",function(event){
-                        event.preventDefault();
-                    });
+                    document.body.addEventListener("click",stopE);
                 }
                 else if(body=="" && title!=""){
                     window.alert("Please enter a body");
                     document.getElementById("title").style.border="2pt solid green";
                     document.getElementById("body").style.border="2pt solid red";
-                    document.getElementById("myform").addEventListener("click",function(event){
-                        event.preventDefault();
-                    });
+                    document.body.addEventListener("click",stopE);
                 }
                 else if(title=="" & body==""){
                     window.alert("Please enter a title and a body");
                     document.getElementById('title').style.border="2pt solid red";
                     document.getElementById('body').style.border="2pt solid red";
-                    document.getElementById("myform").addEventListener("click",function(event){
-                        event.preventDefault();
-                    });
+                    document.body.addEventListener("click",stopE);
                 }
                 else{
-                    document.getElementById("myform").removeEventListener("click",function(event){
-                        event.preventDefault();
-                    })
+                    document.body.removeEventListener("click",stopE);
                 }
             }
         </script>
