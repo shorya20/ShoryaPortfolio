@@ -100,13 +100,15 @@ figure img{
 .view table{
     width: 100%;
     background-color: lawngreen;
-    border-bottom: 5pt solid black;   
+    border-bottom: 10pt solid black;   
 }
 .view .entry{
     border-bottom: 1pt solid white;
 }
 .view small{
-    text-align: right;
+    margin-left: 10em;
+    color: white;
+    font-size: 0.4em;
 }
 .view table h1{
     font-size: large;
@@ -118,6 +120,10 @@ figure img{
     font-size: medium;
     color: white;
     font-family: sans-serif;
+}
+.entry{
+    height:8em;
+    margin-bottom: 1em;
 }
 .right{
     outline: 3pt solid blueviolet;

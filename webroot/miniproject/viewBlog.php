@@ -21,15 +21,15 @@
             <aside>
                 <div class="homepage">
                     <h1>Homepage Link</h1>
-                    <button class="portfolio"><a href="portfolio homepage.html">Click here to access my portfolio homepage!</a>   
+                    <button class="portfolio"><?php if (isset($_POST["usname"], $_POST["pass"])) {echo "<a href = 'addEntry.php'>Click here to add a new Post</a>"}else{echo "<a href='Login.html'>Click here to add a new Post!</a>"} ?> 
                 </div>            
             </aside> 
         </div>
         <div class="right">
             <aside class="redirect">
                 <div class="loginpage">
-                    <h1>Redirect to the Login of the Blog page</h1>
-                    <button class="login"><a href="Login.html">Click here to redirect to the login page</a>
+                    <h1>Redirect to the Logout page</h1>
+                    <button class="login"><a href="Logout.php">Click here to redirect to the logout page</a>
                 </div>
             </aside>
         </div>
@@ -71,6 +71,9 @@
                                 echo "<tr><td class='entry'><small>".$datearray[$i].",".$timearray[$i]."UTC</small></br><h1>".$titlearray[$i]."</h1></br><p>".$bodyarray[$i]."</p></td></tr>";
                             }
                             echo "</table>";    
+                        }
+                        else{
+                            header("location:Login.html");
                         } 
                     ?>
                 </p>

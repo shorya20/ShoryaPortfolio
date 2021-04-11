@@ -14,7 +14,8 @@
     if($conn->query($sql)==TRUE){
         session_start();
         session_unset();
-        session_destroy();    
+        session_destroy(); 
+        header("location:Login.html");   
     }   
     else{
         echo "Error: ". $sql. "<br>" . $conn->error;
