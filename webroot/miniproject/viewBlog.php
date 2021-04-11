@@ -47,7 +47,7 @@
                             $timearray=array();
                             $datearray=array();
                             $titlearray=array();
-                            $bodyarray()=array();
+                            $bodyarray=array();
                             while($row = $result->fetch_assoc()){
                                 $timearray[]=$row["time"];
                                 $datearray[]=$row["date"];
