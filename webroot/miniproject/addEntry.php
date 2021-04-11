@@ -49,6 +49,9 @@
                         event.preventDefault();
                     });
                 }
+                else{
+                    return true;
+                }
             }
         </script>
         <div class="middle">
