@@ -6,6 +6,11 @@
     </head>
     <body>
         <script>
+            function preview(){
+                var title = document.getElementById("title").value;
+                var body = document.getElementById("body").value;
+                window.alert("Preview reads:\nTitle: "+title+"\nBody: "+body);
+            }
             function stopE(e){
                 e.preventDefault();
             }
@@ -70,6 +75,9 @@
                                         <textarea id="body" placeholder="Enter your text here" name="body"></textarea>
                                     </p>
                                 </div>
+                                <div class="preview">
+                                    <button class="input" onclick="preview()">Preview your post</a></button>
+                                </div>   
                                 <div class="submit">
                                     <button class="input" id="submit" onclick="checkempty()">Submit</button>
                                 </div>
