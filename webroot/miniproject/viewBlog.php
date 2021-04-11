@@ -30,7 +30,7 @@
                 <?php
                         session_start();
                         echo "<table>";
-                        echo "<tr><td class='entry'><small>".$_SESSION['time']."</small></br><h1>".$_SESSION['title']."</h1></br><p>".$_SESSION['body']."</p></td></tr>";
+                        echo "<tr><td class='entry'><small>".$_SESSION['date']." ".$_SESSION['time']."</small></br><h1>".$_SESSION['title']."</h1></br><p>".$_SESSION['body']."</p></td></tr>";
                     ?>
                 </p>
         </div>
