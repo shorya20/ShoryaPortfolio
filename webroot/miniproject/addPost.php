@@ -19,14 +19,13 @@
         if($conn->query($sql)==TRUE){
             session_start();
             $tabletime=date("h:i");
-            $date=date('d-M-Y');
+            $date=date('d M Y');
             $title = $_POST['title'];
             $body = $_POST['body'];
             $_SESSION['time']=$tabletime;
             $_SESSION['date']=$date;
             $_SESSION['title']=$title;
             $_SESSION['body']=$body;
-            $sql="DELETE FROM INPUT";
         header('location:viewBlog.php');
         }
         else{

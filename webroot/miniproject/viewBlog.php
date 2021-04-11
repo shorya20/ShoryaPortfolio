@@ -28,9 +28,42 @@
         <div class="view">
                 <p>
                 <?php
-                        session_start();
-                        echo "<table>";
-                        echo "<tr><td class='entry'><small>".$_SESSION['date']." ".$_SESSION['time']."</small></br><h1>".$_SESSION['title']."</h1></br><p>".$_SESSION['body']."</p></td></tr>";
+                        $dbhost = getenv("MYSQL_SERVICE_HOST");
+                        $dbport = getenv("MYSQL_SERVICE_PORT");
+                        $dbuser = getenv("DATABASE_USER");
+                        $dbpwd = getenv("DATABASE_PASSWORD");
+                        $dbname = getenv("DATABASE_NAME");
+                        // Creates connection
+                        $conn = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
+                        // Checks connection
+                        if ($conn->connect_error) {
+                        die("Connection failed: " . $conn->connect_error);
+                        }
+                        $sql = "SELECT time,date,title,body from INPUT";
+                        $result = $conn->query($sql);
+                        if($result->num_rows>0){
+                            session_start();
+                            echo "<table>";
+                            $timearray=array();
+                            $datearray=array();
+                            $titlearray=array();
+                            $bodyarray()=array();
+                            while($row = $result->fetch_assoc()){
+                                $timearray[]=$row["time"];
+                                $datearray[]=$row["date"];
+                                $titlearray[]=$row["title"];
+                                $bodyarray[]=$row["body"];    
+                            }
+                            $length=count($titlearray);
+                            krsort($timearray);
+                            krsort($datearray);
+                            krsort($titlearray);
+                            krsort($bodyarray);
+                            for($i=0;$i<$length;$i++){
+                                echo "<tr><td class='entry'><small>".$datearray[$i].",".$timearray[$i]."UTC</small></br><h1>".$titlearray[$i]."</h1></br><p>".$bodyarray[$i]."</p></td></tr>";
+                            }
+                            echo "</table>";    
+                        } 
                     ?>
                 </p>
         </div>
