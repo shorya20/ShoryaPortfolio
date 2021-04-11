@@ -29,7 +29,7 @@
                     document.getElementById("title").style.border="2pt solid red";
                     document.getElementById("body").style.border="2pt solid green";
                     window.alert("Please enter a title");
-                    document.getElementById("myform").addEventListener("click",function(event){
+                    document.getElementById("submit").addEventListener("click",function(event){
                         event.preventDefault();
                     });
                 }
@@ -37,7 +37,7 @@
                     window.alert("Please enter a body");
                     document.getElementById("title").style.border="2pt solid green";
                     document.getElementById("body").style.border="2pt solid red";
-                    document.getElementById("myform").addEventListener("click",function(event){
+                    document.getElementById("submit").addEventListener("click",function(event){
                         event.preventDefault();
                     });
                 }
@@ -45,12 +45,12 @@
                     window.alert("Please enter a title and a body");
                     document.getElementById('title').style.border="2pt solid red";
                     document.getElementById('body').style.border="2pt solid red";
-                    document.getElementById("myform").addEventListener("click",function(event){
+                    document.getElementById("submit").addEventListener("click",function(event){
                         event.preventDefault();
                     });
                 }
                 else{
-                    return true;
+                    document.getElementById("submit").unbind("click");
                 }
             }
         </script>
