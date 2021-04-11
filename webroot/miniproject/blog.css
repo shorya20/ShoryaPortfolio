@@ -165,11 +165,11 @@ fieldset h1{
     font-family:sans-serif;
     color: white;
 }
-.submit,.reset{
+.submit,.reset,.preview{
     display: inline-block;
     margin-left: 12em;
 }
-.submit .input,.reset .input{
+.submit .input,.reset .input,.preview input{
     padding: 1em;
     width: 8em;
     height: 5em;
@@ -181,7 +181,7 @@ fieldset h1{
 #title,#body{
     border: 1pt solid black;
 }
-.submit .input:hover,.reset .input:hover{
+.submit .input:hover,.reset .input:hover,.preview:hover{
     background-color: tomato;
 }
 .title input{
