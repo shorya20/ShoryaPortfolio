@@ -21,8 +21,8 @@
             <aside>
                 <div class="homepage">
                     <h1>Homepage Link</h1>
-                    <button class="portfolio"><?php 
-                    if(isset($_POST["usname"], $_POST["pass"])){
+                    <button class="portfolio"><?php session_start();
+                    if(isset($_SESSION["usname"], $_SESSION["pass"])){
                         echo "<a href = 'addEntry.php'>Click here to add a new Post</a>";
                     }
                     else{
