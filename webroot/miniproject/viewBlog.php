@@ -25,6 +25,14 @@
                 </div>            
             </aside> 
         </div>
+        <div class="right">
+            <aside class="redirect">
+                <div class="loginpage">
+                    <h1>Redirect to the Login of the Blog page</h1>
+                    <button class="login"><a href="Login.html">Click here to redirect to the login page</a>
+                </div>
+            </aside>
+        </div>
         <div class="view">
                 <p>
                 <?php
@@ -66,14 +74,6 @@
                         } 
                     ?>
                 </p>
-        </div>
-        <div class="right">
-            <aside class="redirect">
-                <div class="loginpage">
-                    <h1>Redirect to the Login of the Blog page</h1>
-                    <button class="login"><a href="Login.html">Click here to redirect to the login page</a>
-                </div>
-            </aside>
         </div>
     </body>
 </html>
