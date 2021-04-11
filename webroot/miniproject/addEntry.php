@@ -53,7 +53,7 @@
                 }
                 else{
                     document.body.removeEventListener("click",stopE);
-                    document.body.submit();
+                    return true;
                 }
             }
         </script>
@@ -67,7 +67,7 @@
                                 <div class="title">
                                     <p>
                                         <label for="Title"></label>
-                                            <input type="text" name="title" placeholder="Title" id="title">
+                                            <input type="text" name="title" placeholder="Title" id="title" onsubmit="checkempty()">
                                     </p>
                                 </div>
                                 <div class="body">
@@ -80,7 +80,7 @@
                                     <button class="input" type="button" onclick="preview()">Preview your post</a></button>
                                 </div>   
                                 <div class="submit">
-                                    <button class="input" type="button" id="submit" onclick="checkempty()">Submit</button>
+                                    <button class="input" type="submit">Submit</button>
                                 </div>
                                 <div class="reset">
                                     <button class="input" type="button" onclick="click1()">Reset</button>
