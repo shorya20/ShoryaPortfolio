@@ -38,18 +38,21 @@
                     document.getElementById("body").style.border="2pt solid green";
                     window.alert("Please enter a title");
                     document.body.addEventListener("click",stopE);
+                    return false;
                 }
                 else if(body=="" && title!=""){
                     window.alert("Please enter a body");
                     document.getElementById("title").style.border="2pt solid green";
                     document.getElementById("body").style.border="2pt solid red";
                     document.body.addEventListener("click",stopE);
+                    return false;
                 }
                 else if(title=="" & body==""){
                     window.alert("Please enter a title and a body");
                     document.getElementById('title').style.border="2pt solid red";
                     document.getElementById('body').style.border="2pt solid red";
                     document.body.addEventListener("click",stopE);
+                    return false;
                 }
                 else{
                     document.body.removeEventListener("click",stopE);
