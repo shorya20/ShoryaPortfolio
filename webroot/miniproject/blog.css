@@ -92,6 +92,31 @@ figure img{
     margin-right: 20em;
     margin-left: 20em;
 }
+.view{
+    margin-left: 16em;
+}
+.view table{
+    width: 100%;
+    background-color: lawngreen;
+    border-bottom: 5pt solid black;   
+}
+.view .entry{
+    border-bottom: 1pt solid white;
+}
+.view small{
+    text-align: right;
+}
+.view table h1{
+    font-size: large;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.view table p{
+    font-size: medium;
+    color: white;
+    font-family: sans-serif;
+}
 .right{
     outline: 3pt solid blueviolet;
     margin-top: 2em;
