@@ -99,8 +99,8 @@ figure img{
 }
 .view table{
     width: 100%;
-    background-color:rgb(23, 88, 23);
-    border-bottom: 9pt solid black;   
+    background-color:rgb(52, 163, 52);
+    border-bottom: 15pt solid black;   
 }
 .view .entry p{
     border-bottom: 4pt solid white;
@@ -166,13 +166,13 @@ fieldset h1{
     color: white;
 }
 .submit,.reset,.preview{
-    padding: 2em;
+    padding: 3em;
     display: inline-block;
 }
 .submit .input,.reset .input,.preview .input{
     padding: 1em;
     width: 10em;
-    height: 5em;
+    height: 4.5em;
     color: white;
     background-color: steelblue;
     border-radius: 70%;
