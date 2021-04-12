@@ -43,7 +43,7 @@
                         <h1>About Myself</h1>
                         <figure class="my_figure"><img class="my_image" src="20210310_182846.jpg" alt="my image"><figcaption>Shorya Sinha</figcaption></figure>
                         <p class="my_text">I am Shorya Sinha and I'm currently a student at QMUL University, London, UK. I'm 20 years old and I am pursuing a BSc Computer Science degree. I have studied my entire school life in the Middle East, specifically in UAE(United Arab Emirates) and Oman. I seek to further improve, challenge and most importantly drive myself to meet my goals!</p>
-                        <button class="blog"><a href="blog.html">Check out my Blog</a></button>
+                        <button class="blog"><a href="viewBlog.php">Check out my Blog</a></button>
                     </div>
                 </article>
             </section>
