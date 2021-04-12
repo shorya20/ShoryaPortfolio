@@ -169,7 +169,7 @@ fieldset h1{
     display: inline-block;
 }
 .submit .input,.reset .input,.preview .input{
-    padding: 1em;
+    padding: 2em;
     width: 10em;
     height: 5em;
     color: white;
