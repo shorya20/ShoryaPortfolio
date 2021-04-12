@@ -11,25 +11,16 @@
     die("Connection failed: " . $conn->connect_error);
     }
     if($_SERVER["REQUEST_METHOD"]=="POST"){
-        $timearray=array();
-        $datearray=array();
-        $titlearray=array();
-        $bodyarray=array();
-        date_default_timezone_set('UTC');
         $tabletime=date("h:i");
-        $timearray[]=$tabletime;
-        $date=date('d-M-Y');
-        $datearray[]=$date;
-        asort($datearray);
+        $date=date('jS F Y');
         $title = $_POST['title'];
-        $titlearray[]=$title;
         $body = $_POST['body'];
-        $bodyarray[]=$body;
-        $sql = "INSERT INTO INPUT(time,date,title,body) VALUES($tabletime,$date,$title,$body)";
-        $_SESSION['timearray']=$timearray;
-        $_SESSION['datearray']=$datearray;
-        $_SESSION['titlearray']=$titlearray;
-        $_SESSION['bodyarray']=$bodyarray;
-        header('location:viewBlog.php');
+        $sql = "INSERT INTO INPUT(time,date,title,body) VALUES('$tabletime','$date','$title','$body')";
+        if($conn->query($sql)==TRUE){
+            header('location:viewBlog.php');
+        }
+        else{
+            echo "Error: ". $sql. "<br>" . $conn->error;
+        }    
     }    
 ?>
