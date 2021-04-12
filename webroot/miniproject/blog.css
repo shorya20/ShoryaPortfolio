@@ -99,7 +99,7 @@ figure img{
 }
 .view table{
     width: 100%;
-    background-color:limegreen;
+    background-color:rgb(23, 88, 23);
     border-bottom: 9pt solid black;   
 }
 .view .entry{
