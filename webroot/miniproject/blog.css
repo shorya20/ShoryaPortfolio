@@ -167,7 +167,6 @@ fieldset h1{
 }
 .submit,.reset,.preview{
     display: inline-block;
-    margin-left: 8em;
 }
 .submit .input,.reset .input,.preview .input{
     padding: 1em;
