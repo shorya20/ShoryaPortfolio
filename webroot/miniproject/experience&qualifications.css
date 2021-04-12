@@ -105,12 +105,12 @@ tbody tr:nth-child(odd){
     float: left;
     width: 10em;
 }
-.first_details p,.second_details p{
+.first_details p{
     font-family: fantasy;
     padding-top: 7em;
     margin-left: 14em; 
 }
-.first_box,.Education ul,.Qualification ul,.second_box{
+.first_box,.Education ul,.Qualification ul{
     width: 50%;
     margin-top: 5em;
     height: 13em;

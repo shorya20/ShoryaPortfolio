@@ -8,7 +8,7 @@
     <body>
         <header>
             <nav>
-                <a href="index.php" class="logo"> <img src="Screenshot 2021-03-17 131113.png" alt="logo"></a>
+                <a href="portfolio homepage.html" class="logo"> <img src="Screenshot 2021-03-17 131113.png" alt="logo"></a>
                 <h1>Blog homepage of Shorya Sinha</h1>
             </nav>
             <figure><img src="index.png" alt="blogimg"></figure>
@@ -21,70 +21,37 @@
             <aside>
                 <div class="homepage">
                     <h1>Homepage Link</h1>
-                    <button class="portfolio"><?php 
-                    session_start();
-                    if(isset($_SESSION['usname'], $_SESSION['password'])){
-                        echo "<a href = 'addEntry.php'>Click here to add a new Post</a>";
-                    }
-                    else{
-                        echo "<a href='Login.html'>Click here to add a new Post!</a>";
-                    }
-                    ?> 
+                    <button class="portfolio"><a href="portfolio homepage.html">Click here to access my portfolio homepage!</a>   
                 </div>            
             </aside> 
+        </div>
+        <div class="view">
+            <article>
+                <section>
+                <?php
+                    $length = count($_SESSION-['datearray']);
+                    printf("<table>");
+                    for(i=0;i<$length;i++){
+                        printf("<tr><td class='title'><small></small><h1>$_SESSION['title'][$i]</h1><p>$_SESSION['body'][$i]</p></td></tr>");
+                    }
+                    printf("</table>");
+                    if(!isset($_SESSION["usname"])){
+                        printf("<a href = 'Login.html'>Add Post</a>")
+                    }
+                    else{
+                        printf("<a href = 'addEntry.php'>Add Post</a>")
+                    }
+                    ?>
+                </section>
+            </article>
         </div>
         <div class="right">
             <aside class="redirect">
                 <div class="loginpage">
-                    <h1>Redirect to the Logout page</h1>
-                    <button class="login"><a href="Logout.php">Click here to redirect to the logout page</a>
+                    <h1>Redirect to the Login of the Blog page</h1>
+                    <button class="login"><a href="Login.html">Click here to redirect to the login page</a>
                 </div>
             </aside>
-        </div>
-        <div class="view">
-                <p>
-                <?php
-                        $dbhost = getenv("MYSQL_SERVICE_HOST");
-                        $dbport = getenv("MYSQL_SERVICE_PORT");
-                        $dbuser = getenv("DATABASE_USER");
-                        $dbpwd = getenv("DATABASE_PASSWORD");
-                        $dbname = getenv("DATABASE_NAME");
-                        // Creates connection
-                        $conn = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
-                        // Checks connection
-                        if ($conn->connect_error) {
-                        die("Connection failed: " . $conn->connect_error);
-                        }
-                        $sql = "SELECT time,date,title,body from INPUT";
-                        $result = $conn->query($sql);
-                        if($result->num_rows>0){
-                            session_start();
-                            echo "<table>";
-                            $timearray=array();
-                            $datearray=array();
-                            $titlearray=array();
-                            $bodyarray=array();
-                            while($row = $result->fetch_assoc()){
-                                $timearray[]=$row["time"];
-                                $datearray[]=$row["date"];
-                                $titlearray[]=$row["title"];
-                                $bodyarray[]=$row["body"];    
-                            }
-                            $length=count($titlearray);
-                            krsort($timearray);
-                            krsort($datearray);
-                            krsort($titlearray);
-                            krsort($bodyarray);
-                            for($i=0;$i<$length;$i++){
-                                echo "<tr><td class='entry'><small>".$datearray[$i].",".$timearray[$i]."UTC</small></br><h1>".$titlearray[$i]."</h1></br><p>".$bodyarray[$i]."</p></td></tr>";
-                            }
-                            echo "</table>";    
-                        }
-                        else{
-                            header("location:Login.html");
-                        } 
-                    ?>
-                </p>
         </div>
     </body>
 </html>
