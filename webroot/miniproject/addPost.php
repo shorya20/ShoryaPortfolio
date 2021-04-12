@@ -12,21 +12,12 @@
     }
     if($_SERVER["REQUEST_METHOD"]=="POST"){
         $tabletime=date("h:i");
-        $date=date('d-M-Y');
+        $date=date('jS F Y');
         $title = $_POST['title'];
         $body = $_POST['body'];
         $sql = "INSERT INTO INPUT(time,date,title,body) VALUES('$tabletime','$date','$title','$body')";
         if($conn->query($sql)==TRUE){
-            session_start();
-            $tabletime=date("h:i");
-            $date=date('d M Y');
-            $title = $_POST['title'];
-            $body = $_POST['body'];
-            $_SESSION['time']=$tabletime;
-            $_SESSION['date']=$date;
-            $_SESSION['title']=$title;
-            $_SESSION['body']=$body;
-        header('location:viewBlog.php');
+            header('location:viewBlog.php');
         }
         else{
             echo "Error: ". $sql. "<br>" . $conn->error;
