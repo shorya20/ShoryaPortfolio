@@ -166,7 +166,7 @@ fieldset h1{
     color: white;
 }
 .submit,.reset,.preview{
-    padding-left: 2em;
+    padding-left: 5em;
     display: inline-block;
 }
 .submit .input,.reset .input,.preview .input{
